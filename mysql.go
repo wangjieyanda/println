@@ -1,7 +1,6 @@
 package println
 
 import (
-	"database/sql"
 	"fmt"
 	"log"
 
@@ -59,8 +58,8 @@ func DbConnect(key string) (db *sqlx.DB, err error) {
 	return nil, err
 }
 
-type MySQLDriver struct{}
+// type MySQLDriver struct{}
 
-func init() {
-	sql.Register("mysql", &MySQLDriver{})
-}
+// func init() {
+// 	sql.Register("mysql", &MySQLDriver{})
+// }
