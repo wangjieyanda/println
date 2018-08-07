@@ -57,9 +57,3 @@ func DbConnect(key string) (db *sqlx.DB, err error) {
 	}
 	return nil, err
 }
-
-// type MySQLDriver struct{}
-
-// func init() {
-// 	sql.Register("mysql", &MySQLDriver{})
-// }

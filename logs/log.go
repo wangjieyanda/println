@@ -3,6 +3,8 @@ package logs
 import (
 	"fmt"
 	"os"
+
+	// "println"
 	"runtime"
 	"strconv"
 	"strings"
@@ -28,15 +30,16 @@ const (
 )
 
 func NewLog(prefix string) (L *Logger) {
-
 	L = new(Logger)
 	L.Prefix = prefix
 	L.LogFunCCallPath = 2
+	// L.LogPath =
 	return
 }
 
+var NewLogConfig Logger
+
 func (L *Logger) Error(i ...interface{}) {
-	fmt.Printf("test%v\n", i)
 	L.writeLog(ERROR, "", i)
 }
 

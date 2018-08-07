@@ -1,6 +1,8 @@
 package println
 
-import "println/logs"
+import (
+	"println/logs"
+)
 
 type Println struct {
 	Logger logs.Logger
